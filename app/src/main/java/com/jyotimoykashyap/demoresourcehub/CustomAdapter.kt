@@ -15,6 +15,11 @@ class CustomAdapter(diffCallback : CustomDiffUtil)
                 viewBinding.run {
                     nameOfCollege.text = gdsc.name
                     descriptionOfCollege.text = gdsc.description
+
+                    cardView.setOnLongClickListener{
+                        cardView.isChecked = !cardView.isChecked
+                        true
+                    }
                 }
             }
 

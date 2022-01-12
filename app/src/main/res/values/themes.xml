@@ -30,5 +30,6 @@
     <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
         <item name="fontFamily">@font/poppins_light</item>
         <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textSize">20sp</item>
     </style>
 </resources>

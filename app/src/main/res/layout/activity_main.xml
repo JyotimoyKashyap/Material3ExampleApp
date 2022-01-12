@@ -18,14 +18,13 @@
             style="?attr/collapsingToolbarLayoutLargeStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
-            app:contentScrim="?attr/colorPrimary"
             app:title="Explore"
             app:titleCollapseMode="fade"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.TitleMedium"
             app:expandedTitleTextAppearance="@style/TextAppearance.App.TitleLarge"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <com.google.android.material.appbar.MaterialToolbar
-                style="@style/Widget.App.Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:elevation="0dp"

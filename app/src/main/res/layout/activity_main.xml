@@ -9,6 +9,7 @@
     android:fitsSystemWindows="true">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
@@ -16,16 +17,20 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             style="?attr/collapsingToolbarLayoutLargeStyle"
             android:layout_width="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
             app:contentScrim="?attr/colorPrimary"
-            android:layout_height="?attr/collapsingToolbarLayoutLargeSize">
+            app:title="Explore"
+            app:titleCollapseMode="fade"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.TitleLarge"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <com.google.android.material.appbar.MaterialToolbar
+                style="@style/Widget.App.Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
                 android:elevation="0dp"
                 app:layout_collapseMode="pin"
-                app:title="Explore"/>
+                app:title="Explore" />
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -34,6 +39,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:listitem="@layout/row_item"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 

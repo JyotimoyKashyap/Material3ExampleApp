@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jyoti/Documents/DemoResource/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/jyoti/Documents/DemoResource/app/src/main/res/layout/cardview.xml" value="0.264" />
+        <entry key="..\:/Users/jyoti/Documents/DemoResource/app/src/main/res/layout/row_item.xml" value="0.25" />
       </map>
     </option>
   </component>

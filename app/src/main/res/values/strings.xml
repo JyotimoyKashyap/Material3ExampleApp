@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DemoResourceHub</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</string>
 </resources>

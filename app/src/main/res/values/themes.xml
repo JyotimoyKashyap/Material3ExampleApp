@@ -23,7 +23,7 @@
     <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
         <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">

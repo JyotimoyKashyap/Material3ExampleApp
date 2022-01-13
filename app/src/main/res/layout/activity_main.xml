@@ -14,13 +14,22 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            style="?attr/collapsingToolbarLayoutLargeStyle"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:titleMarginBottom="0dp"
-            app:titleMarginTop="50dp"
-            app:title="Explore"
-            app:titleTextAppearance="@style/TextAppearance.App.TitleLarge"/>
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.TitleMedium"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.TitleLarge"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:title="Explore"
+                android:elevation="0dp"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -2,6 +2,10 @@ package com.jyotimoykashyap.demoresourcehub
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowInsets
+import android.view.WindowManager
+import com.google.android.material.shape.MaterialShapeDrawable
 import com.jyotimoykashyap.demoresourcehub.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         val gdscList = listOf<Gdsc>(
             Gdsc("GDSC NIT Silchar" , getString(R.string.dummy_text)),
@@ -33,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         adapter.submitList(gdscList)
 
         binding.run {
+
+//            appBarLayout.statusBarForeground = MaterialShapeDrawable.createWithElevationOverlay(this@MainActivity)
+
             gdscListView.adapter = adapter
         }
 
